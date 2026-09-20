@@ -33,6 +33,7 @@ nav ul {
     display:flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
 }
@@ -117,4 +118,33 @@ h2 {
 .destacado img{
     width: 80%;
     max-width: 180px;
+}
+
+#contacto {
+    text-align: center;
+}
+
+#contacto a {
+    display: inline-block;
+    background-color: #e53935;
+    color:white;
+    text-decoration:none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #222;
+    color:white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer a {
+    color: #ffcb05;
+    text-decoration: none;
+}
+
+footer a:hoover {
+    color:white;
 }
