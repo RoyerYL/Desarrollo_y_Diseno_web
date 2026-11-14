@@ -10,7 +10,7 @@ ESTRUCTURA DEL PROYECTO
 - js/main.js: arrays, generación dinámica, funciones y eventos de JavaScript.
 - img/: imágenes utilizadas por la Pokédex.
 - README.txt: descripción e instrucciones de prueba.
-- integrantes.txt: nombres de integrantes, si la entrega es grupal.
+- integrantes.txt: nombres de integrantes.
 
 1. Arrays de datos (IMPLEMENTADO)
 El array "pokemones" contiene seis objetos: Bulbasaur, Charmander, Squirtle, Pikachu, Jigglypuff y Gengar. Cada uno incluye nombre, número, tipo, descripción, evolución y ruta de imagen.
