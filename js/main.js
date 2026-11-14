@@ -1,5 +1,5 @@
 
-let pokemones = [
+const pokemones = [
     {
         nombre: "Bulbasaur",
         numero: "0001",
@@ -50,7 +50,7 @@ let pokemones = [
     }
 ];
 
-let evoluciones = [
+const evoluciones = [
     {
         nombre: "Venusaur",
         descripcion: "Una gran flor sobre el lomo.",
@@ -74,17 +74,19 @@ let evoluciones = [
 ];
 
 
-let contenedor = document.querySelector(".tarjetas");
 
-for (let pokemon of pokemones) {
-    contenedor.innerHTML += `
+const contenedor = document.querySelector(".tarjetas");
+
+for (const pokemon of pokemones) {
+    contenedor.insertAdjacentHTML("beforeend", `
         <article class="tarjeta">
-            <img src="${pokemon.imagen}" alt="${pokemon.nombre}">
+            <img src="${pokemon.imagen}" alt="Imagen de ${pokemon.nombre}">
             <h3>${pokemon.nombre}</h3>
             <p><strong>Número:</strong> #${pokemon.numero}</p>
             <p><strong>Tipo:</strong> ${pokemon.tipo}</p>
             <p>${pokemon.descripcion}</p>
             <p><strong>Evoluciones:</strong> ${pokemon.evolucion}</p>
         </article>
-    `;
+    `);
 }
+
