@@ -82,6 +82,7 @@ h2 {
 /* Flexbox: centra las tarjetas horizontalmente y alinea sus elementos en el eje transversal */
 .tarjeta {
     flex: 1 1 16rem;
+    max-width: 280px;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 15px;
@@ -101,26 +102,6 @@ h2 {
     font-size: 1.4rem
 }
 
-.destacados {
-    display:flex;
-    flex-wrap:wrap;
-    gap: 1.5rem;
-    justify-content: center;
-}
-
-.destacado {
-    flex: 1 1 12rem;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    padding: 1rem;
-    text-align: center;
-}
-
-.destacado img{
-    width: 80%;
-    max-width: 180px;
-}
 
 #contacto {
     text-align: center;
@@ -149,4 +130,31 @@ footer a {
 
 footer a:hover {
     color:white;
+}
+
+.oculto {
+    display: none !important;
+}
+.favorito {
+    cursor: pointer;
+}
+
+/* El botón está oculto en pantallas grandes */
+.btn-hamburguesa {
+    /* display: none; */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Las 3 rayitas */
+.btn-hamburguesa span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white; /* antes era #333 */
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
 }

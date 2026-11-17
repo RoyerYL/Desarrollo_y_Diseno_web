@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Mi pokédex</h1>
@@ -16,33 +18,45 @@
     </header>
 
     <nav>
-        <ul>
-            <li> <a href="#inicio">Inicio</a></li>
-            <li> <a href="#acerca">Acerca de</a></li>
-            <li> <a href="#pokemon">Pokémon</a></li>
-            <li> <a href="#destacados">Destacados</a></li>
-            <li> <a href="#contacto">Contacto</a></li>
+        <button class="btn-hamburguesa" id="btn-menu" aria-label="Abrir menú" aria-expanded="false"
+            aria-controls="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="menu oculto" id="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
+            <li><a href="#pokemon">Pokémon</a></li>
+            <li><a href="#destacados">Destacados</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
     <main>
         <section id="inicio">
             <h2>Cada Pokémon tiene algo por descubrir</h2>
-            <p>Bienvenido a Mi Pokédex, un espacio para explorar el mundo Pokémon. Encontrá información sobre distintos Pokémon y conocé las características que hacen especial a cada uno.</p>
-            <p>Recorré las fichas, descubrí sus tipos y aprendé sobre sus evoluciones. Desde los primeros compañeros de aventura hasta otros Pokémon que vale la pena conocer.</p>
+            <p>Bienvenido a Mi Pokédex, un espacio para explorar el mundo Pokémon. Encontrá información sobre distintos
+                Pokémon y conocé las características que hacen especial a cada uno.</p>
+            <p>Recorré las fichas, descubrí sus tipos y aprendé sobre sus evoluciones. Desde los primeros compañeros de
+                aventura hasta otros Pokémon que vale la pena conocer.</p>
 
             <img src="img/portada.avif" alt="Ilustración con varios Pokémon">
         </section>
 
         <section id="acerca">
             <h2>Sobre esta Pokédex</h2>
-            <p>Mi Pokédex es un proyecto creado por una fan para compartir información de forma sencilla y visual. Cada ficha reúne una imagen, el nombre, el tipo y una breve descripción del Pokémon.</p>
-            <p>Este sitio forma parte de un trabajo práctico de Diseño y Desarrollo Web. Es un proyecto educativo no oficial, pensado para quienes quieren empezar a conocer el universo Pokémon.</p>
+            <p>Mi Pokédex es un proyecto creado por una fan para compartir información de forma sencilla y visual. Cada
+                ficha reúne una imagen, el nombre, el tipo y una breve descripción del Pokémon.</p>
+            <p>Este sitio forma parte de un trabajo práctico de Diseño y Desarrollo Web. Es un proyecto educativo no
+                oficial, pensado para quienes quieren empezar a conocer el universo Pokémon.</p>
         </section>
 
         <section id="pokemon">
             <h2>Conocé a los Pokémon </h2>
-
+            <select name="" id="tipos">
+                <option value="">Todos los tipos</option>
+            </select>
             <p>
                 Explorá esta selección y descubrí qué distingue a cada uno.
             </p>
@@ -53,53 +67,13 @@
 
         </section>
 
-        <section id="destacados">
-            <h2>Un vistazo a sus evoluciones.</h2>
-            <p>
-                Los Pokémon pueden cambiar de aspecto al evolucionar. En esta galería te mostramos cuatro evoluciones de los protagonistas de nuestra selección.
-            </p>
-            
-            <div class="destacados">
-                <article class="destacado">
-                <img src="img/venusaur.png" alt="Venusaur con una gran flor rosada sobre el lomo">
-                <p>
-                    <strong>Venusaur:</strong>
-                    una gran flor sobre el lomo
-                </p>
-                </article>
-
-                <article class="destacado">
-                <img src="img/charizard.jfif" alt="Charizard con alas abiertas y una llama en la punta de la cola">
-                <p>
-                    <strong>Charizard:</strong>
-                    alas y una cola con fuego.
-                </p>
-                </article>
-
-                <article class="destacado">
-                <img src="img/blastoise.png" alt="Blastoise con dos cañones que sobresalen de su caparazón">
-                <p>
-                    <strong>Blastoise:</strong>
-                    un caparazón equipado con dos cañones.
-                </p>
-                </article>
-
-                <article class="destacado">
-                <img src="img/raichu.png" alt="Raichu naranja con largas orejas y cola en forma de rayo">
-                <p>
-                    <strong>Raichu:</strong>
-                    la evolución de Pikachu.
-                </p>
-                </article>
-            </div>    
-        </section>
-
         <section id="contacto">
             <h2>¿Qué Pokémon te gustaría ver?</h2>
             <p>
-                Esta Pokédex puede seguir creciendo. Si querés sugerir un Pokémon o compartir una corrección, podés hacerlo en futuras versiones del proyecto.
+                Esta Pokédex puede seguir creciendo. Si querés sugerir un Pokémon o compartir una corrección, podés
+                hacerlo en futuras versiones del proyecto.
             </p>
-            
+
             <a href="mailto:mipokedex.tp@gmail.com">
                 Enviar una sugerencia
             </a>
@@ -129,4 +103,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
