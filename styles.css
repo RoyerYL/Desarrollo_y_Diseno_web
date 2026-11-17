@@ -31,6 +31,7 @@ nav{
 
 nav ul {
     display:flex;
+    /* propiedades para centrar el contenido */
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
@@ -75,9 +76,10 @@ h2 {
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
-    align-items: strech;
+    /* propiedades para que las tarjetas tengan la misma altura */
+    align-items: stretch;
 }
-
+/* Flexbox: centra las tarjetas horizontalmente y alinea sus elementos en el eje transversal */
 .tarjeta {
     flex: 1 1 16rem;
     background-color: white;
@@ -145,6 +147,6 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hoover {
+footer a:hover {
     color:white;
 }
