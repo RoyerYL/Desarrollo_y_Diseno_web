@@ -265,6 +265,7 @@ function crearTarjetas(pokemones) {
 
 //-------------LLamadas a funciones y renderizado -----------------    
 
+function init() {
 // Renderizamos las tarjetas de los pokemones en el contenedor
 crearTarjetas(pokemones);
 
@@ -320,3 +321,6 @@ for (const tipo of tipos) {
 
 // Agregamos un event listener al botón del menú para mostrar u ocultar el menú en pantallas pequeñas
 btnMenu.addEventListener("click", toggleMenu);
+}
+
+init();
